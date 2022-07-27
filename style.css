@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-white:#FFFFFF;
+    --color-blue: #535971;
+}
+
+body{
+    background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before{
+    content: ' ';
+
+    width: 100%;
+    height: 436px;
+
+    top: 0;
+    left:0;
+    z-index: -1;
+    position: absolute;
+    background-color: var(--color-blue); 
+}
+
+.page{
+    width: 100%;
+    padding:0 2%;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+/* == ESTILIZAÇÃO | HEADER == */
+
+header{
+    color: var(--color-white);
+    margin-top: 128px;
+    margin-bottom: 58px;
+}
+
+header h1{
+    font-weight: 400;
+    font-family: 'Staatliches', cursive;
+}
+
+/* == ESTILIZAÇÃO FORM == */
+
+form{
+    padding: 64px;
+    min-height: 300px;
+    border-radius: 8px 8px 0 0;
+    background-color: var(--color-white);
+}
+
+/* == ESTILIZAÇÃO FORM | FIELDSET == */
+
+fieldset{
+    border: none;
+}
+
+fieldset legend{
+    font-size: 24px;
+    line-height: 34px;
+    color: var(--color-blue);
+    font-weight: 400;
+    font-family: 'Staatliches', cursive;
+
+    width: 100%;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #E6E6F0;
+}
+
+/* == ESTILIZAÇÃO FORM | INPUTS == */
+
+.input-wrapper{
+    margin-top: 16px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label{
+    color: #4E4958;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 0.75rem;
+}
+
+.input-wrapper label span{
+    color: #C1BCCC;
+    font-size: 12px;
+    margin-left:6px;
+}
+
+.input-wrapper input{
+    outline: none;
+    height: 56px;
+    padding: 0 24px;
+    border-radius: 4px;
+    background-color: #FAFAFC;
+    border: 0.5px solid #E6E6F0;
+}
+
+.input-wrapper input:focus{
+    border: 1px solid #6600CC;
+}
+
+.input-wrapper input:invalid{
+    border: 1px solid #FF5374;
+}
+
+.legend-wrapper{
+    margin-top: 30px;
+}
+
+.col-2{
+    gap: 22px;
+    display: flex;
+}
+
+.col-2 > .input-wrapper{
+    width: 100%;
+}
+
+.col-3{
+    gap: 20px;
+    display: flex;
+}
+
+.col-3 > div:nth-child(1){
+    width: 100%;
+}
+
+fieldset h2{
+    margin-top: 32px;
+    font-weight: 400;
+    font-size:1.25rem;
+    line-height: 20px;
+    color: var(--color-blue);
+    font-family: 'Staatliches', cursive;
+}
+
+.fieldset-wrapper h2:not(.mentor-title){
+    margin-top: 16px;
+}
+
+/*== ESTILIZAÇÃO FOOTER | BOTÃO ==*/
+
+footer{
+    height: 160px;
+    padding: 48px 64px;
+    margin-bottom: 100px;
+    border-radius: 0 0 8px 8px;
+    background-color: var(--color-blue);
+
+}
+
+footer .button{
+    width: 100%;
+    height: 56px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: #FF5374;
+
+    cursor: pointer;
+    color: var(--color-white);
+    font-variant: small-caps;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Staatliches', cursive;
+
+    transition-duration: 1s;
+}
+
+footer .button:hover{
+    background-color: #F8375E;
+}
